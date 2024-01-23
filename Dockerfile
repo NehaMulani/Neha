@@ -1,5 +1,5 @@
 FROM openjdk:17
 VOLUME /tmp
-COPY .mvn/*.jar maven-wrapper.jar
+COPY target/*.jar resume-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "maven-wrapper.jar"]
+ENTRYPOINT ["java", "-jar", "resume-0.0.1-SNAPSHOT.jar"]
