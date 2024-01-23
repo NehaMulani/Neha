@@ -1,5 +1,5 @@
 FROM openjdk:17
 VOLUME /tmp
-ADD target/maven-wrapper.jar maven-wrapper.jar
+ADD target/resume-0.0.1-SNAPSHOT.jar resume-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "maven-wrapper.jar"]
+ENTRYPOINT ["java", "-jar", "resume-0.0.1-SNAPSHOT.jar"]
